@@ -1,0 +1,82 @@
+.slick-dots li button:before {
+    color: blue;
+    font-size: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: blue;
+    width: 20px;
+}
+
+.touchBtn {
+    margin-top: -8px;
+    background: transparent linear-gradient(270deg, #33b4ff 0%, #00649e 100%) 0% 0% no-repeat padding-box !important;
+    border-radius: 50px;
+    color: #fff;
+    padding: 9px 22px;
+    animation-name: shadeChange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-weight: 700;
+    animation-direction: alternate;
+
+}
+
+@keyframes shadeChange {
+    0% {
+        background-color: #d1e2d1;
+    }
+
+    25% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: #d1e2d1;
+    }
+
+    100% {
+        background-color: #d1e2d1;
+    }
+}
+
+.enterBtn {
+    margin-top: -8px;
+}
+
+.blinker:hover {
+    color: #00649e;
+    animation: ease-in-out;
+}
+
+.blinker {
+    cursor: pointer;
+    animation-name: blinker;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-weight: 700;
+    animation-direction: alternate;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.industries {
+    top: '55px';
+    left: '30px';
+    transform: 'translateX(-26%)';
+
+}

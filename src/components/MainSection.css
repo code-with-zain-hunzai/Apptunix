@@ -1,0 +1,78 @@
+.btn-fix {
+    background: transparent linear-gradient(270deg, #33b4ff 0%, #00649e 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    border-radius: 50px;
+    border: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 36px rgba(0, 0, 0, .06);
+    font-size: 22px;
+    font-weight: 300;
+    position: relative;
+    white-space: nowrap;
+    transition: .8s;
+    height: 55px;
+    padding: 5px 20px 5px 22px;
+    width: fit-content;
+}
+
+.hover-reverse {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-reverse.hover {
+    transform: translateX(60px);
+}
+
+.linksImg li {
+    filter: grayscale(100%);
+}
+
+.linksImg li:hover {
+    filter: grayscale(0%);
+    mix-blend-mode: luminosity;
+    transition: all .5s ease-in-out;
+}
+
+
+@media screen,
+(max-width: 400px) {
+    .lst-count{
+        grid-template-columns: auto;
+    }
+
+    .count-lst {
+        padding: 20px;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, .15);
+        border-radius: 10px;
+    }
+}
+
+/* button  */
+.btn-first{
+    background: transparent linear-gradient(270deg, #33b4ff 0%, #00649e 100%) 0% 0% no-repeat padding-box;
+    color: white;
+}
+
+.button-fst {
+    transition: transform 0.3s;
+}
+.text-black{
+    transition: tranform 0.5s;
+}
+
+.button-fst+.text-black.hovered {
+    transform: translateX(-500%);
+}
+
+.text-black.hovered {
+    transition:  transform 0.5s;
+
+}
+
+.button-fst.hovered {
+    transition: transform 0.5s;
+    transform: translateX(2rem);
+}

@@ -1,0 +1,169 @@
+.custom-gradient-hover:hover .custom-gradient-button {
+  background: transparent linear-gradient(270deg, #33b4ff 0%, #00649e 100%) 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+/* style fro button partner */
+
+.btn-last {
+  background: transparent linear-gradient(270deg, #33b4ff 0%, #00649e 100%) 0% 0% no-repeat padding-box;
+}
+
+.btn-part {
+  transition: transform 0.3s;
+}
+
+.btn-part+.text-black.hovered {
+  transform: translateX(-390%);
+
+}
+
+.btn-part.hovered {
+  transition: transform 0.5s;
+  transform: translateX(2rem);
+}
+
+
+
+Line::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #266499;
+  bottom: 0;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  left: 0;
+  max-width: 350px;
+  opacity: .23;
+}
+
+.hover-zoom:hover figure,
+.hover-zoom:hover h4 {
+  transform: scale(1.1);
+  box-shadow: black;
+}
+
+
+/* team slider  */
+
+.team::before {
+  content: "";
+  position: absolute;
+  background: url(https://cdn-hjokj.nitrocdn.com/xKvPrJeRKcMfBVHKpjbxbYMvqmxtHXge/assets/images/optimized/rev-0c04fc7/www.apptunix.com/wp-content/uploads/2022/03/nh_tsti_elemt.svg);
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  z-index: -1;
+  width: 490px;
+  transform: translate(-5%, -30%);
+  display: none;
+}
+
+@media screen and (min-width: 1220px) {
+  .team::before {
+    display: block;
+  }
+}
+
+.desTeam::after {
+  position: absolute;
+  content: "";
+  background: url(https://cdn-hjokj.nitrocdn.com/xKvPrJeRKcMfBVHKpjbxbYMvqmxtHXge/assets/images/optimized/rev-0c04fc7/d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/2022/11/28113036/1.png);
+  width: 105px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left center;
+  transform: translate(0%, -320%);
+}
+
+.filter.grayscale {
+  filter: grayscale(1);
+}
+
+.logo-figure img {
+  mix-blend-mode: luminosity;
+  transition: 0.5s ease ease-in-out;
+}
+
+.logo-figure:hover img {
+  mix-blend-mode: normal;
+}
+
+/* btn-qoute  */
+
+.btn-quote {
+  transition: transform 0.5s;
+}
+
+.btn-quote+.text-black.hovered {
+  transform: translateX(-370%);
+
+}
+
+.btn-quote.hovered {
+  transition: transform 0.5s;
+  transform: translateX(2rem);
+}
+
+
+/* pre-footer  */
+
+.pre-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.pre-footer::before {
+  content: "";
+  position: absolute;
+  right: -100px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: -1;
+  width: 420px;
+  height: 420px;
+  background: #FFF; 
+  border-radius: 50%;
+  overflow: hidden;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .pre-footer::before {
+    display: block;
+  }
+}
+ 
+
+/* btn-view  */
+
+.btn-view {
+  transition: transform 0.5s;
+}
+
+.btn-view+.text-black.hovered {
+  transform: translateX(-290%);
+
+}
+ /* btn background */
+.custom-gradient {
+  background: linear-gradient(270deg, #33b4ff 0%, #00649e 100%);
+}
+
+.btn-view.hovered {
+  transition: transform 0.5s;
+  transform: translateX(2rem);
+}
+
+
+
+.custom-phone-input .react-tel-input .flag-dropdown {
+  border: none;
+  background:#FFF;
+}

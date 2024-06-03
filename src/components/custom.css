@@ -1,0 +1,238 @@
+.whel-loti {
+    z-index: 110000;
+    height: 130px;
+    width: 130px;
+}
+
+.whel-cntr {
+    width: 60%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-img {
+    z-index: 110000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    transition: linear;
+}
+
+.four {
+    z-index: 10000;
+    position: absolute;
+    left: 49.8%;
+    top: 49.9%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    height: 643px;
+    width: 643px;
+}
+
+.three {
+    z-index: 110000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    height: 503px;
+    width: 503px;
+}
+
+.two {
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 368px;
+    width: 368px;
+}
+.one {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    height: 237px;
+    width: 237px;
+}
+
+.app{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -60%);
+    z-index: 110000;
+    height: 110;
+    width: 100px; 
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    .four {
+        height: 643px;
+        width: 643px;
+    }
+
+    .three {
+        height: 503px;
+        width: 503px;
+    }
+
+    .two {
+        height: 368px;
+        width: 368px;
+    }
+
+    .one {
+        height: 237px;
+        width: 237px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .four {
+        height: 473px;
+        width: 473px;
+    }
+
+    .three {
+        height: 370px;
+        width: 370px;
+    }
+
+    .two {
+        height: 270px;
+        width: 270px;
+    }
+
+    .one {
+        height: 174px;
+        width: 174px;
+    }
+}
+
+
+.app-zoom-in-out {
+    animation-name: zoomInOut;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
+.text-mid{
+    background-color: #fff;
+    color: #000;
+}
+
+.button-mid {
+    transition: transform 0.3s;
+}
+.text-white{
+    transition: transform 0.5s;
+}
+
+.button-mid+.text-white.hovered {
+    transform: translateX(-650%);
+}
+
+.text-white.hovered {
+    transition:  transform 0.5s;
+
+}
+.icon-btn{
+    background: transparent linear-gradient(270deg, #33b4ff 0%, #00649e 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+}
+
+.button-mid.hovered {
+    transition: transform 0.5s;
+    transform: translateX(2rem);
+}
+
+.secPara:before{
+    position: absolute;
+    top: 33%;
+    content: "";
+    background: url(https://cdn-hjokj.nitrocdn.com/xKvPrJeRKcMfBVHKpjbxbYMvqmxtHXge/assets/images/optimized/rev-f651c96/apptunix.wpenginepowered.com/wp-content/uploads/2022/12/cta2_svg-1.svg) no-repeat;
+    width: 146px;
+    height: 63px;
+}
+
+/* slider-btn */
+
+.slider-btn {
+    transition: transform 0.3s;
+}
+
+.slider-btn+.text-white.hovered {
+    transform: translateX(-390%);
+}
+
+.slider-btn.hovered {
+    transition: transform 0.5s;
+    transform: translateX(2rem);
+}
+
+
+.slideIn img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.slideContent {
+    padding: 20px;
+    width: 100%; 
+    background-color: white;
+    position: absolute; 
+    bottom: 2%;
+}
+
+/* custom.css */
+.indusSlider .slideIn {
+    padding: 0 10px;
+}
+
+.indusSlider .slideContent {
+    padding: 10px;
+}
+
+.indusSlider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .indusSlider .slideIn {
+        padding: 0 5px;
+    }
+    .indusSlider .slideContent {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .indusSlider .slideIn {
+        padding: 0 2px;
+    }
+    .indusSlider .slideContent {
+        padding: 2px;
+    }
+}
+
+
